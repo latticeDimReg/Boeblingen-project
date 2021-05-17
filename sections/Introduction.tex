@@ -1,0 +1,24 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+
+
+\section{Introduction}
+\label{sec:intro}
+
+\begin{itemize}
+\item Key points of the paper
+\item hypothesis: both space and time dependent coherent and incoherent errors
+\item 	errors not fully characterized by IBM backend properties and random benchmarking – need randomized compiling and cycle benchmarking
+\item  general methodology scale independent and device agnostic
+\item inter-day re-calibration errors 
+\end{itemize}
+
+The advent of Noisy Intermediate Scale Quantum (NISQ) era in quantum computing hardware platforms has opened opportunities for many application domains to begin experimenting with migrating existing applications from the digital computing to the quantum computing world.  The earliest quantum computing platforms only had a few qubits.  However, in the past decade the field has seen advancements placing ever larger numbers of qubits onto hardware platforms.  Along with advancements in hardware technologies, software advances have matured the field of quantum computing to the point where serious prototype applications and small demonstration applications are now being implemented on these platforms.  
+
+Although the overall hardware capabilities now allow these applications to successfully produce outputs from running on quantum computing hardware platforms with dozens of qubits, these machines are still classified as NISQ machines.  As such, factors of noise over the coherence times of the qubits in the machine will degrade the fidelity of the machine’s output and the limit the scalability and reliability of these computers.  These noise sources ultimately result in errors in application’s output.  Characterizing the full implications of the various sources of noise in these machines is crucial to understanding how these error impact an application’s performance.
+
+Quantum computing hardware architects have been aware of these issues from the time of the earliest hardware platforms ever produced.  They are continuously focused on developing ever more sophisticated techniques and methods to mitigate the errors on these NISQ platforms.  The earliest parameters describing various types of errors were single numbers that characterized an individual qubit’s performance as a single qubit gate.  In addition to measuring single qubit errors, additional measurements were recorded that measured the error rate for two qubits connected together to build two qubit gates.  As the hardware developed techniques such as 
+quantum process tomography~\cite{ref:Chuang1997} or gate set tomography~\cite{ref:Merkel2012,ref:Blume-Kohout2013,ref:Blume-Kohout2017} were introduced to fully characterize these quantum processes.  The difficulty in implementing these techniques is that in order to fully characterize a quantum process it requires a number of experiments and digital post-processing resources that grows exponentially with the number of qubits.  Alternatives to such an exhaustive option were ideas of process fidelity measurements.  Such a process fidelity measurement can be determined by randomized benchmarking ~\cite{ref:Emerson2005,ref:Dankert2009,ref:Magesan2011} 
+
+\end{document}
