@@ -197,7 +197,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \linenumbers
 \begin{document}
-\title{Profiling Field Theory Application Performance on Quantum Computers Using Cycle Benchmarking and Randomized Compiling}
+\title{Complexity of the Error Problem When Profiling Quantum Field Theory Application Performance on Quantum Computers}
+
 %\title{Studying the Ising Model Trotterization with Cycle Benchmarking and Randomized Compiling}
 %
 {\footnote{ \textbf{SHOULD THIS GO IN THE ACKNOWLEDGMENTS? DOES IT BELONG HERE ON PAGE 1} This manuscript has been authored by UT-Battelle, LLC, under Contract No. DE-AC0500OR22725 with the U.S. Department of Energy. The United States Government retains and the publisher, by accepting the article for publication, acknowledges that the United States Government retains a non-exclusive, paid-up, irrevocable, world-wide license to publish or reproduce the published form of this manuscript, or allow others to do so, for the United States Government purposes. The Department of Energy will provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan.}}
@@ -235,6 +236,12 @@
 \maketitle
 
 \subfile{sections/Introduction}
+
+
+
+
+
+
 
 
 \section{Physics Model}
@@ -352,14 +359,8 @@ The experiments were run IBM Q Boeblingen device which has the qubit layout as s
 \subsection{Transverse Ising Model}
 
 \subsection{Cycle Benchmarking}
-The measured process infidelities ($e_F$) obtained using CB protocol are presented in Fig.~\ref{fig:CB} for qubit layouts $[0,1,2,3],[6,7,12,11],[16,17,18,19]$, runs 1, 2, and 3 between days 01/23-31/2021 for cycles demonstrated in Fig.~\ref{fig:BoeblingenCycles}.
-\begin{figure*}[ht!]
-    % \centering
-    % \includegraphics[width=2.2\columnwidth]{final_plot.pdf}
-    \includegraphics[scale=0.42]{CBForEachDayEachRunEachLayout.pdf}
-    \caption{Process infidelity ($e_F$) calculated using cycle benchmarking the circuits ran on IBM Q Boeblingen hardware for layouts $[0,1,2,3],[6,7,12,11],[16,17,18,19]$, runs 1, 2, and 3 between days 01/23-31/2021 are presented.}
-    \label{fig:CB}
-\end{figure*}
+The measured process infidelities ($e_F$) obtained using CB protocol are presented in 
+
 
 The cycle benchmarking data was obtained using the following variables. For each cycle of interest we used sequence lengths of 2, 10, and 22, respectively. The sequence length refers to the number of times the cycle of interest appears apart from state inversion. The number of random circuits used in each sequence length is 48. Each of these circuits at each sequence length were run $N_\text{shots}=128$ times. 
 
